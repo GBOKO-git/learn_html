@@ -1,103 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyPortfolio</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- je mets cela en commentaire car l'image est trop grand 
+             et dans ce cour on ne peut utiliser que le html
+        <div id="logo" class="logo">
+          <img src="./medias/logo.png" alt="mon logo" />
+        </div>
+        -->
+        <div id="menu" class="menu">
+          <ul type="none">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-        <header>
-            <nav>
+    <main>
+      <section>
+        <h1 id="about">About</h1>
+        <div>
+          <img src="./medias/photo.jpg" alt="ma photo" />
+        </div>
 
-                <div id="logo" class="logo">
-                    <img src="" alt="mon logo">
-                </div>
+        <table border="1">
+          <tr>
+            <th>NOM</th>
+            <th>PRENOMS</th>
+            <th>DIPLOMES</th>
+            <th>PROFESSION</th>
+          </tr>
+          <tr>
+            <td>AMARA</td>
+            <td>GBOKO ANZOUMANAN</td>
+            <td>LICENCE</td>
+            <td>DEVELOPPEUR WEB</td>
+          </tr>
+        </table>
+      </section>
+      <section id="work" class="work">
+        <div>
+          <h1>Work</h1>
+          <p>Ma premiere realisation youtube!</p>
+          <p>Ne vous moquez pas s'il vous plait!</p>
+          <p>Encouragez moi plutot!</p>
+          <iframe
+            width="884"
+            height="497"
+            src="https://www.youtube.com/embed/e7QLLCzFOsI"
+            title="MA PREMIÈRE RÉALISATION YOUTUBE"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
 
-                <div id="menu" class="menu">
-                    <ul type="none">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#resume">Resume</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>    
+      <section>
+        <h1 id="resume">Resume</h1>
+      </section>
 
-                </div>
+      <section>
+        <h1 id="contact">Contact</h1>
+        <form>
+          <h3>contact us!</h3>
+          <div>
+            <label for="name">NOM</label>
+            <input type="text" />
 
-            </nav>
-        </header>
+            <label for="lastname">PRENOMS</label>
+            <input type="text" />
+          </div>
 
-        <main>
-            <section>
-                <h1 id="about">About</h1>
+          <div>
+            <label for="email">E-MAIL</label>
+            <input type="email" />
 
-            </section>
-            <section id="work" class="work"> 
+            <label for="tel">Telephone</label>
+            <input type="number" />
+          </div>
 
-                <div>
-                    <h1>Work</h1>
-                    <p>Ma premiere realisation youtube! </p>
-                    <p>Ne vous moquez pas sil vous plait!</p>
-                    <p>Encourager moi plutot!</p>
-                    <iframe src="https://youtu.be/e7QLLCzFOsI?si=ivxUpFvm7rK8RHqE" frameborder="1">
+          <div>
+            <label for="objet">Objet</label>
+            <input type="text" />
+          </div>
 
-                        
-                    </iframe>
-                </div>
+          <div>
+            <label for="message">Votre Message</label>
+            <input type="textarea" />
+          </div>
+        </form>
+      </section>
+    </main>
 
-            </section>
-            <section>
-                <h1 id="resume">Resume</h1>
-            </section>
-            <section>
-                <h1 id="contact">Contact</h1>
-                <form >
-                    <p>contact us!</p>
-                    <div>
-
-                        <label for="name">NOM</label>
-                        <input type="text">
-    
-                        <label for="lastname">PRENOMS</label>
-                        <input type="text">    
-
-                    </div>
-
-                    <div>
-
-                        <label for="email">E-MAIL</label>
-                        <input type="email">
-    
-                        <label for="tel">Telephone</label>
-                        <input type="number">    
-
-                    </div>
-
-                    <div>
-                        <label for="objet">Objet</label>
-                        <input type="text">
-
-                    </div>
-
-                    <div>
-                            
-                        <label for="message">Votre Message</label>
-                        <input type="textarea">    
-
-                    </div>
-
-
-
-                </form>
-            </section>
-        </main>
-
-        <footer>
-
-        </footer>
-
-
-
-</body>
+    <footer></footer>
+  </body>
 </html>
